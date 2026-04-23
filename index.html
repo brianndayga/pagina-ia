@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ética en la IA</title>
+
+<!-- Fuente -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    color: #93c5fd;
+}
+
+canvas {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ética en el Uso de la Inteligencia Artificial</h1>
+    <p>Bryan Isack Bedón Sinchiguano (y agregar compañeros)</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#uso">Uso Responsable</a>
+    <a href="#riesgos">Riesgos</a>
+    <a href="#impacto">Impacto</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#curioso">Dato Curioso</a>
+    <a href="#bibliografia">Bibliografía</a>
+</nav>
+
+<section id="inicio">
+<div class="card">
+<h2>Inicio</h2>
+<p>La inteligencia artificial está transformando el mundo, pero su uso debe ser ético, responsable y consciente para evitar consecuencias negativas en la sociedad.</p>
+</div>
+</section>
+
+<section id="uso">
+<div class="card">
+<h2>Uso Responsable</h2>
+<p>La IA debe utilizarse respetando la privacidad, evitando manipulación y fomentando su uso como herramienta de apoyo, no sustitución del pensamiento humano.</p>
+</div>
+</section>
+
+<section id="riesgos">
+<div class="card">
+<h2>Riesgos y Sesgos</h2>
+<p>Los algoritmos pueden reflejar prejuicios humanos, generar discriminación y difundir información falsa si no son regulados adecuadamente.</p>
+</div>
+</section>
+
+<section id="impacto">
+<div class="card">
+<h2>Impacto Social y Educativo</h2>
+<p>La IA mejora el aprendizaje y acceso a información, pero también puede generar dependencia tecnológica y desigualdad.</p>
+</div>
+</section>
+
+<section id="dashboard">
+<div class="card">
+<h2>Dashboard de IA</h2>
+
+<canvas id="grafico1"></canvas>
+<br><br>
+<canvas id="grafico2"></canvas>
+
+</div>
+</section>
+
+<section id="curioso">
+<div class="card">
+<h2>Dato Curioso</h2>
+<p>Hoy en día existen IA capaces de generar rostros humanos completamente falsos que parecen reales.</p>
+</div>
+</section>
+
+<section id="bibliografia">
+<div class="card">
+<h2>Bibliografía (APA 7)</h2>
+<p>Russell, S., & Norvig, P. (2021). <i>Artificial Intelligence: A Modern Approach</i>. Pearson.</p>
+<p>Floridi, L., et al. (2018). AI ethics framework. <i>Minds and Machines</i>.</p>
+<p>UNESCO. (2021). Ética de la inteligencia artificial.</p>
+<p>European Commission. (2020). Ethics guidelines.</p>
+<p>IBM. (2023). AI Ethics.</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Proyecto IA</p>
+</footer>
+
+<script>
+// Gráfico 1 - Uso de IA
+new Chart(document.getElementById('grafico1'), {
+    type: 'bar',
+    data: {
+        labels: ['Estudiantes', 'Empresas', 'Usuarios conscientes'],
+        datasets: [{
+            label: 'Porcentaje (%)',
+            data: [80, 65, 30],
+        }]
+    }
+});
+
+// Gráfico 2 - Opinión sobre regulación
+new Chart(document.getElementById('grafico2'), {
+    type: 'pie',
+    data: {
+        labels: ['A favor regulación', 'En contra', 'Indiferente'],
+        datasets: [{
+            data: [90, 5, 5],
+        }]
+    }
+});
+</script>
+
+</body>
+</html>
